@@ -3,10 +3,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&family=Roboto+Slab:wght@200&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet");
+
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    
 }
 
 html{
@@ -17,81 +19,45 @@ html{
 .container-header{
     width: 100%;
 	height: 100px;
-	position: left;
-	top: 0;left: 0;
     align-items: center;
     display: flex;
-
 }
 
-body{
-	background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
-	background-size: 100vw 100vh;
-	background-repeat: no-repeat;
-}
+body{}
 
-.capa{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.4);
-    z-index: -1; 
-    top: 0;left: 0;
-}
 .tituloHome{ 
    color: aliceblue;
-   font-size: 60px;
+   font-size: 40px;
    padding: 10px;
-   margin: 30px 0px 30px 0px;
+   margin: 10px 0px 10px 0px;
    background-image: url(../img/fondo.jpeg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   text-align: center;
 }
-
 
 .subtitulo{
-    font-size: 20px;
-    padding: 0px;
-    border: 10px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
-footer{
-    padding: 100px;
-    margin-bottom: 0px;
-    margin-top: 100px;
-    background-image: url(../img/diseño\ tela.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-weight: bold;
-    text-align: left;
     font-size: 15px;
+    padding: 10px;
+    border: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 li{
     list-style-type: none;
     margin-top: 0px;}
 
-
 h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Kalam', cursive;
 }
 
 h2{
     font-family: 'Roboto Slab', serif;
 }
 
-.cabeza{
-    margin-top: 0px;
-    text-align: left;
-}
-.cabeza1{
-    margin-top: 0px;
-    text-align: right;
-}
+
 .tuCarrito{
     background-color: rgb(216, 174, 124);
     color: aliceblue;
@@ -130,37 +96,6 @@ h2{
     border-radius: 7px;
 }
 
-.imagenes{
-    margin-top: 0px;
-    flex-direction: column-reverse;
-    grid-area: imagenes;
-    
-}
-.padre-flex{
-    display: flex;
-    flex-direction: row;
-}
-
-#modelo1{
-    margin: 100px 0px 0px 0px;
-    grid-area: modelo1;
-    background-position: center;
-}
-#modelo2{
-    margin: 100px 0px 0px 0px;
-    grid-area: modelo2;
-    background-position: center;
-}
-#modelo3{
-    margin: 100px 0px 0px 0px;
-    grid-area: modelo3;
-    grid-area: modelo3;
-    display: grid;
-}
-#modelo4{
-    margin: 100px 0px 0px 0px;
-    grid-area: modelo4;
-}
 #lista{
     margin:0px;
 }
@@ -262,75 +197,232 @@ h2{
     margin-right: 100px;
     text-align: center;
 }
-
 .container{
     width: 100%;
-	max-width: auto;
-	margin: auto;
-    /*background: green;*/
 }
-.container  .logo{
+.container  .logo img{
+    width: 100px;
+    height: 100px;
     float: left;
-	line-height: 100px;
-    background: bisque;
 }
 
-
-.logo h1{
-    color: black;
-    font-weight: 400px;
-    font-size: 50px;
-    margin-left: 10px;
-}
 .container .menu{
-    float: right;
+    width: 100%;
     line-height: 100px;
-    background: red;
+    text-align: right;
+    background: rgb(49, 139, 167);
 }
 
 .container .menu a{
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     line-height: normal;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
     border-bottom: 2px solid;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 5px;
 }
 .container .menu a:hover{
-    /*border-bottom: 2px solid #c7c7c7;*/
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
-.container .menu-barra a:hover{
-    padding: 15px;
+
+.container .menu-barra a{
+    padding: 5px;
     line-height: normal;
     text-decoration: none;
-    color: #fff;
-    transition: all 0.2s ease;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
     border-bottom: 2px solid;
-    font-size: 17px;
-    margin-right: 5px;
+    font-size: 15px;
+    display: inline-block;
 }
-a{
-    text-decoration: none;
-    margin: 10px;
-    text-align: center;
-    color: #fff;
+.container .menu-barra a:hover{
+    padding-bottom: 2px solid;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid;
 }
-
-footer{
-    grid-area: footer;
-    justify-content: center;
-    
-}
-.tituloP{
-    grid-area: tituloP;
-}
-
-
 .letra{
     color: black;
 
 }
+
+.container-producto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.main{
+    padding: 0px 20px;
+}
+.productos{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.productos img{
+    width: 200px;
+    
+}
+.producto-descripcion a{
+    color: #000;
+}
+.producto-descripcion h2{
+    font-size: 25px;
+}
+.producto-titulo{
+    text-align: center;
+
+}
+.producto-precio{
+    color: blue;
+    font-weight: bold;
+}
+.pie-pagina{
+    background-image: url(../img/diseño\ tela.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+
+    margin-bottom: 25px;
+    font-size: 20px;
+} 
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+}
+.pie.pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: aqua;
+    text-align: center;
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    background-color: rgb(26, 114, 165);
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .container .menu{
+        width: 100%;
+    }
+    .container-header{
+        width: 100%;
+        height: 100px;
+        position: left;
+        top: 0;left: 0;
+        align-items: center;
+        display: flex;
+    }
+    .pie-pagina .grupo-1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    
+    .container .menu{
+        width: 100%;
+    }
+    .container-header{
+        width: 100%;
+        height: 100px;
+        position: left;
+        top: 0;left: 0;
+        align-items: center;
+        display: flex;
+    }
+    .container-producto{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .container .menu{
+        width: 100%;
+    }
+    
+    .container-header{
+        width: 100%;
+    }
+    .container-producto{
+        display: grid;
+        grid-template-columns: repeat(4,300px);
+        grid-gap: 20px;
+        justify-content: center;
+    }
+    .productos{
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    .productos img{
+        width: 200px;  
+    }
+}
+@media screen and (max-width: 500px) {
+    .container  {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+    }
+    .container .menu{
+        width: 100%;
+        line-height: 100px;
+        text-align: center;
+    }
+    .container .menu a{
+        display: inline-block;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .tituloHome{ 
+        font-size: 30px;
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+   
+}
+
